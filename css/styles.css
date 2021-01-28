@@ -1,0 +1,501 @@
+/* GLOBAL STYLES*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Roboto, sans-serif;
+}
+
+.clr {
+    clear: both;
+}
+
+.h2 {
+    color: #343A40;
+    font-size: 34px;
+    font-weight: bold;
+}
+
+.h2-div {
+    margin: 0 auto 30px;
+    text-align: center;
+}
+
+.h2-div:after {
+    content: "ــــــــــــــــــــــــــــــــــــــــــــــ";
+    width: 70px;
+    height: 5px;
+    line-height: 1px;
+    font-size: 7px;
+    border-top: 1px solid #17A2B8;
+    border-bottom: 1px solid #17A2B8;
+    position: relative;
+    color: transparent;
+    top: 0;
+}
+
+.h2-div:before {
+    content: "ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ";
+    width: 140px;
+    font-size: 10px;
+    font-weight: 700;
+    height: 8px;
+    color: #17A2B8;
+    position: relative;
+    top: 72px;
+}
+
+/* Navbar */
+nav {
+    background-color: rgba(0, 0, 0, 0.9);
+    transition-duration: 1.2s;
+}
+.navbar .navbar-brand {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 26px;
+    position: relative;
+    left: 20px;
+}
+
+.navbar .nav-item .nav-link {
+    color: rgba(255, 255, 255,0.7);
+    font-weight: 100;
+}
+.navbar .nav-item.active .nav-link{
+    color: #fff;
+    font-weight: bold;
+}
+
+.navbar .nav-item.activeClick .nav-link {
+    color: #DC3545;
+}
+
+@media screen and (min-width: 768px) {
+    nav {
+        background-color: transparent;
+    }
+}
+
+/* HOME */
+.home {
+    background-image: url(../img/slider/slider-01.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+}
+
+/* .home #word {
+    color: #DC3545;
+} */
+.trans-background {
+    background-color: rgba(0, 0, 0, 0.8);
+    height: 100vh;
+}
+
+
+.welcome-message {
+    text-align: center;
+    padding: 30px 0;
+    color: #fff;
+    position: relative;
+    top: 25%;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.welcome-message span {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.welcome-message h1 {
+    font-size: 38px;
+    color: #DC3545;
+    font-weight: bold;
+}
+
+.welcome-message p {
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.8);
+    font-weight: 300;
+}
+
+/* HOME MEDIA QUERIES */
+
+@media screen and (min-width:768px) {
+   
+    .welcome-message span {
+        font-size: 24px;
+    }
+
+    .welcome-message h1 {
+        font-size: 70px;
+    }
+
+    .welcome-message p {
+        font-size: 26px;
+    }
+}
+
+
+/* ABOUT SECTION */
+.about {
+    padding: 70px 15px;
+}
+
+.about-img-container {
+    position: relative;
+    margin-bottom: 10px;
+}
+
+
+.about-img-container img {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+.about-img-cover {
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    text-align: center;
+    overflow: hidden;
+    transition: all .5s;
+}
+
+.about-img-container:hover .about-img-cover {
+    height: 100%;
+}
+
+.about-img-cover a {
+    position: relative;
+    top: 48%;
+    padding: 10px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    transition: all .4s;
+}
+
+.about-img-cover a:hover {
+    color: #DC3545;
+}
+
+.about-body h2 {
+    font-size: 34px;
+    font-weight: 600;
+}
+
+.about-body h2 span {
+    margin-right: 8px;
+    color: #DC3545;
+}
+
+.about-body p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: rgb(85, 85, 85);
+    line-height: 25px;
+}
+
+.about-body div.hr {
+    border-top: 1px dotted rgb(85, 85, 85);
+    margin: 10px auto 0;
+}
+
+
+
+/* ABOUT MEDIA QUERIES */
+
+@media screen and (min-width: 768px) {
+    .about {
+        overflow: auto;
+    }
+
+    .about-left {
+        margin-top: 32px;
+        width: 40%;
+        float: left;
+        padding: 0 15px;
+    }
+
+    .about-right {
+        width: 60%;
+        float: right;
+        padding: 0 15px;
+    }
+
+    .about-body div.hr {
+        margin-bottom: 0;
+    }
+
+    .about-footer button {
+        padding: 12px 22px;
+    }
+
+}
+
+@media screen and (min-width: 992px) {
+
+
+    .about-left {
+        width: 35%;
+        text-align: right;
+        margin-left: 30px;
+    }
+
+    .about-right {
+        width: 57%;
+    }
+
+    .about-img-container {
+        position: relative;
+        top: 20px;
+        left: 5%;
+    }
+
+    .about-img-shadow {
+        z-index: -1;
+        border: 8px solid #555555;
+        border-radius: 5px;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        bottom: 6%;
+        right: 8%;
+    }
+
+}
+
+@media screen and (min-width: 1200px) {
+    .about-body h2 {
+        margin-bottom: 20px;
+    }
+
+    .about-body div.hr {
+        margin: 20px auto;
+    }
+
+}
+
+/* SERVICES SECTION */
+.services {
+    padding: 40px 0 30px;
+    background-color: #F1F1F1;
+    text-align: center;
+}
+
+.service h3 {
+    color: #343A40;
+}
+
+.services-body {
+    font-family: 'Roboto', sans-serif;
+    padding: 0 15px;
+}
+
+.service {
+    padding: 10px;
+    line-height: 25px;
+    margin: 20px 0;
+    transition: all .8s ease-out;
+}
+
+.service * {
+    margin-bottom: 15px;
+}
+
+.service p {
+    margin-bottom: 0;
+}
+
+.service .icon {
+    font-size: 30px;
+    color: #DC3545;
+    transition: all .8s ease-out;
+}
+
+.service p {
+    color: rgb(85, 85, 85);
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.service:hover {
+    background-color: #fff;
+}
+
+.service:hover .icon {
+    transform: scale(1.3);
+}
+
+/* SERVICES MEDIA QUERIES */
+
+@media screen and (min-width: 768px) {
+    .services-head h2 {
+        font-size: 40px;
+    }
+
+    .service h3 {
+        font-size: 24px;
+    }
+}
+
+/*###################################################################*/
+/* Works Start */
+/*###################################################################*/
+.works .nav-item .nav-link {
+    color: #343A40;
+}
+
+.works .nav-item .nav-link.active {
+    color: #DC3545;
+    background-color: transparent;
+}
+
+.works .work-item {
+    color: #000;
+    text-decoration: none;
+    position: relative;
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+
+.works .work-item .caption {
+    position: absolute;
+    padding: 12px;
+    text-align: center;
+    bottom: -30%;
+    left: 12px;
+    right: 12px;
+    opacity: 0;
+    background-color: rgba(255, 255, 255, 0.9);
+    transition: all 0.3s;
+}
+
+.works .work-item .caption div {
+    transform: scale(0);
+    transition: all 0.7s;
+}
+
+.works .work-item .caption p {
+    transform: scale(0);
+    transition: all 0.7s;
+}
+
+.works .work-item img {
+    transition: all 1.5s ease-out;
+}
+
+.works .work-item:hover img {
+    transform: scale(1.3);
+}
+
+.works .work-item:hover .caption {
+    bottom: 12px;
+    opacity: 1;
+}
+
+.works .work-item:hover .caption div {
+    transition-delay: .2s;
+    transform: scale(1.3);
+}
+
+
+.works .work-item:hover .caption p {
+    transition-delay: .5s;
+    transform: scale(1);
+}
+/*###################################################################*/
+/* Works End */
+/*###################################################################*/
+
+/* Skills Section */
+
+#skills {
+    background-color: #F1F1F1;
+}
+
+
+.skills-item {
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 10px;
+    transition: all .8s ease-out;
+}
+
+.skills-item:hover {
+    background-color: #fff;
+}
+
+.skills-item .skill-icon {
+    font-size: 60px;
+    color: #000;
+}
+
+
+.skills-item h2 {
+    font-size: 26px;
+    letter-spacing: 2px;
+    margin: 10px 0;
+    color: #DC3545;
+}
+
+.skills-item p {
+    width: 75%;
+    margin: 0 auto;
+    color: #191716;
+}
+
+
+/* CONTACT SECTION */
+.contact {
+    padding: 40px 0 50px;
+}
+
+
+
+/* FOOTER */
+.footer {
+    padding: 50px 30px;
+    background-color: #343A40;
+}
+
+.footer {
+    text-align: center;
+    margin: 0 auto;
+    color: #fff;
+    text-align: center;
+}
+
+.footer-icons {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.footer-icons a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.footer-icon {
+    margin: 0 5px;
+    transition: all 0.3s;
+}
+
+.footer-icon:hover {
+    color: #DC3545;
+    cursor: pointer;
+}
+
+
